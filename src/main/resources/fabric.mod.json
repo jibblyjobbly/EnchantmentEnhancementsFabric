@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enchantment-enhancements",
+	"version": "${version}",
+	"name": "Enchantment Enhancements",
+	"description": "Fixes the awful enchantment system, removing the gambling aspect for a much more robust system.",
+	"authors": [
+		"MooseMix"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/enchantment-enhancements/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.moosemix.enchantmentsenhancements.EnchantmentEnhancements"
+		],
+		"client": [
+			"com.moosemix.enchantmentsenhancements.EnchantmentEnhancementsClient"
+		],
+		"fabric-datagen": [
+			"com.moosemix.enchantmentsenhancements.EnchantmentEnhancementsDataGenerator"
+		]
+	},
+	"mixins": [
+		"enchantment-enhancements.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
